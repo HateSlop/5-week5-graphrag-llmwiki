@@ -1,0 +1,36 @@
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+
+# Generated sessions and local data stores
+runs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.arrow
+*.feather
+
+# Python, notebooks, and environments
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.conda/
+
+# Editor and OS state
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Personal Obsidian window state
+wiki_vault/.obsidian/workspace*.json

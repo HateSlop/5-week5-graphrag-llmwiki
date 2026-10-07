@@ -1,0 +1,15 @@
+{
+  "note": "D1-D3에서 사람이 확인한 교육용 추출 결과. 자동 추출 결과가 아닙니다.",
+  "nodes": [
+    {"id": "person:ohesl", "kind": "Person", "name": "오헤슬"},
+    {"id": "project:payment-refactor", "kind": "Project", "name": "결제 시스템 리팩터링"},
+    {"id": "program:payment-stability", "kind": "Program", "name": "결제 안정화 프로그램"},
+    {"id": "team:security", "kind": "Team", "name": "보안팀"}
+  ],
+  "edges": [
+    {"from": "person:ohesl", "to": "project:payment-refactor", "kind": "LEADS", "source_id": "D1", "evidence": "오헤슬은 결제 시스템 리팩터링 프로젝트를 총괄한다."},
+    {"from": "project:payment-refactor", "to": "program:payment-stability", "kind": "PART_OF", "source_id": "D2", "evidence": "결제 시스템 리팩터링 프로젝트는 결제 안정화 프로그램에 속한다."},
+    {"from": "team:security", "to": "program:payment-stability", "kind": "REVIEWS", "source_id": "D3", "evidence": "보안팀은 결제 안정화 프로그램의 보안 검토를 담당한다."}
+  ]
+}
+
